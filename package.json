@@ -4,7 +4,7 @@
   "description": "Application interface for maintaining illumination project",
   "main": "index.js",
   "dependencies": {
-    "electron": "^2.0.6",
+    "electron": "^2.0.8",
     "lokijs": "^1.5.5"
   },
   "devDependencies": {
