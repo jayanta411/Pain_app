@@ -1,0 +1,27 @@
+{
+  "name": "pain_app",
+  "version": "1.0.0",
+  "description": "Application interface for maintaining illumination project",
+  "main": "index.js",
+  "dependencies": {
+    "electron": "^2.0.6",
+    "lokijs": "^1.5.5"
+  },
+  "devDependencies": {
+    "electron-packager": "^12.1.0"
+  },
+  "scripts": {
+    "test": "electron .",
+    "start": "electron .",
+    "build": "electron-packager . PainApp --overwrite",
+    "compile": "electron-packager . PainApp --out=releases/ --platform=win32 --arch=ia32",
+    "package-win": "electron-packager . PainApp --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds"
+  },
+  "author": "jayanta",
+  "license": "ISC",
+  "build": {
+    "win": {
+      "icon": "assets/icons/win/icon.ico"
+    }
+  }
+}

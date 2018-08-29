@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Hello Pain!</title>
+      <script src="client_lib/plotly-latest.min.js"></script>
+      <script src="client_js/main.js"></script>
+    </head>
+    <style>
+        table{
+            border:1em solid black;
+            background-color: blanchedalmond;
+        }
+        td{
+            border:1px solid gray;
+        }
+    </style>
+    <body>
+      <h1>Hello Pain!</h1>
+        <div>
+          <label for="file">Choose csv file to upload</label>
+          <input type="file" id="fileUpload" name="file">
+        </div>
+        <div>
+          <button onclick="Upload()">Submit</button>
+        </div>
+        <!-- <button onclick="syncronousCheck()">sync Conn Check</button>
+        <button onclick="asyncronousCheck()">async Conn Check</button> -->
+        <div id="dvCSV"></div>
+        <button onclick="saveInDb()">Save in db</button>
+        <!-- <button onclick="setHistory()">get History</button> -->
+        <!-- <button onclick="getCsvFromDb()">Retrive from db</button> -->
+        <h2>History</h2>
+        <div id="history"></div>
+        <div id="showHistory"></div>
+        <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+    </body>
+  </html>
